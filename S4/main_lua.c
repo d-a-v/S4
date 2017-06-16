@@ -3089,7 +3089,7 @@ int luaopen_RCWA(lua_State *L){
 	lua_pushcfunction(L, &S4L_Simulation__gc);
 	lua_settable(L, -3);
 	lua_pop(L, 1);
-	/*
+	
 	luaL_newmetatable(L, "S4.SpectrumSampler");
 	luaL_newlib(L, SpectrumSamplerObj);
 	lua_setfield(L, -2, "__index");
@@ -3105,7 +3105,7 @@ int luaopen_RCWA(lua_State *L){
 	lua_pushcfunction(L, S4L_Interpolator__gc);
 	lua_settable(L, -3);
 	lua_pop(L, 1);
-	*/
+	
 	return 1;
 }
 
